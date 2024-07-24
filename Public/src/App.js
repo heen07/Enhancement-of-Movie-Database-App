@@ -10,10 +10,9 @@ import SearchMoviesContext from './context/SearchMoviesContext'
 
 import './App.css'
 
-// write your code here
-const App = () => <div>Hello World</div>
 const API_KEY = 'f32b79895b21468afbdd6d5342cbf3da'
 
+// write your code here
 const App = () => {
   const [searchResponse, setSearchResponse] = useState({})
   const [apiStatus, setApiStatus] = useState('INITIAL')
@@ -65,3 +64,4 @@ const App = () => {
 }
 
 export default App
+ 

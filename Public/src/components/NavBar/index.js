@@ -12,7 +12,6 @@ const NavBar = props => {
           onTriggerSearchingQuery,
           onChangeSearchInput,
           searchInput,
-          apiStatus,
         } = value
 
         const onChangeHandler = event => onChangeSearchInput(event.target.value)
@@ -34,7 +33,7 @@ const NavBar = props => {
               placeholder="Search"
             />
             <button
-              className="btn btn-outline-info"
+              className="btn btn-outline-info button-details"
               type="button"
               onClick={onSearchHandler}
             >

@@ -38,8 +38,8 @@ class TopRated extends React.Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container">
-      <Loader type="TailSpin" color="#032541" />
+    <div className='loader-container'>
+      <Loader type='TailSpin' color='#032541' />
     </div>
   )
 
@@ -48,7 +48,7 @@ class TopRated extends React.Component {
     const {results} = topRatedMovieResponse
 
     return (
-      <ul className="row p-0 ms-0 me-0 mt-3">
+      <ul className='row p-0 ms-0 me-0 mt-3 ul-list'>
         {results.map(movie => (
           <MovieCard key={movie.id} movieDetails={movie} />
         ))}
@@ -63,7 +63,7 @@ class TopRated extends React.Component {
       <>
         {' '}
         <NavBar />
-        <div className="route-page-body">
+        <div className='route-page-body'>
           {isLoading
             ? this.renderLoadingView()
             : this.renderPopularMoviesList()}
